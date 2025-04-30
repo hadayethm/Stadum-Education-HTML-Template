@@ -75,10 +75,54 @@
     .banner-slider-img {
         padding: 115px 0px;
     }
+    .mean-menu {
+        padding-left: 20px;
+    }
+    .course-features {
+        padding: 10px 5px;
+    }
+    .course-features ul {
+        justify-content:inherit;
+    }
+    .course-features ul li {
+        font-size: 13px;
+        padding-right: 10px;
+        margin-right: 16px;
+        text-align: center;
+    }
+    .course-author h6 {
+        font-size: 16px;
+        padding-left: 7px;
+    }
+    .popular-course-card {
+        padding: 30px 15px;
+    }
 }
 
 @media (max-width: 1199px) {
- 
+    .banner-social-icon ul li {
+        margin-right: 1px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .banner-bottom-right-item {
+        padding-right: 15px;
+        margin-right: 15px;
+    }
+    .categorie-item {
+        display: inherit ;
+        text-align: center;
+        height: 86%;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .banner-slider-text {
+        padding-left: 20px;
+        padding-right: 15px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -101,10 +145,7 @@
          position: inherit; 
         transform: rotate(0deg);
         margin-top: 30px;
-    }
-    h1 {
-        font-size: 45px;
-        line-height: 60px;
+        left: 0;
     }
     .topbar-left ul {
         display: inherit;
@@ -139,12 +180,25 @@
         width: 100%;
         padding-top: 34px;
     }
+    .banner-slider-text p {
+        width: 100%;
+    }
+    .banner-search-form {
+        width: 100%;
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 767px) {
     .course-tabs-button .nav-item {
         padding-right: 10px;
         margin-bottom: 15px;
+    }
+    #partners-area .section-heading-text a {
+        margin-top: 30px;
+    }
+    .section-heading-text {
+        text-align: center;
     }
     .section-heading {
         padding-bottom: 30px;
@@ -206,10 +260,6 @@
     .banner-left-color img {
       display: none;
     }
-    .banner-search-form {
-        width: 90%;
-        padding-top: 30px;
-    }
     .banner-slider-text p {
         width: 90%;
     }
@@ -219,7 +269,17 @@
 }
 
 @media (max-width: 576px) {
-
+    .banner-slider-text {
+        padding-left: 20px;
+    }
+    .banner-bottom-right {
+        display: inherit;
+    }
+    .banner-bottom-right-item {
+        padding-top: 20px;
+        border: none;
+    }
+    
 }
 
 @media (max-width: 480px) {
