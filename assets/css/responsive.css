@@ -50,12 +50,6 @@
     #testimonial-area .owl-carousel .owl-nav .owl-next {
         right: 0;
     }
-    .community-img {
-        position: re;
-    }
-    .community-img img{
-        width: 100%;
-    }
     .community-icon {
         display: none;
     }
@@ -94,9 +88,107 @@
     .why-choose-img {
         padding-top: 20px;
     }
+    .main-responsive-nav .mean-container a.meanmenu-reveal {
+        padding: 21px 0 0;
+    }
+    .navbar-area::before {
+        width: 40%;
+    }
+    .banner-left-color{
+        display: none;
+    }
+    #hero-area-one .owl-theme .owl-dots {
+         position: inherit; 
+        transform: rotate(0deg);
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .topbar-left ul {
+        display: inherit;
+    }
+    .topbar-left ul li::after {
+      display: none;
+    }
+    #hero-area-one .owl-theme .owl-dots::before, #hero-area-one .owl-theme .owl-dots::after  {
+        display: none;
+     }
+     .video-btn {
+        justify-content: center;;
+        padding-right: 0px;
+        padding-top: 90px;
+    }
+    .banner-social-icon {
+        padding-top: 17px;
+        background: var(--main-color);
+        padding-bottom: 17px;
+        text-align: center;
+    }
+    .banner-bottom-right-item {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .course-tabs-button .nav-tabs {
+        padding-top: 0;
+        padding-bottom: 33px;
+        justify-content: center;
+    }
+    .partner-logo-wrapper {
+        width: 100%;
+        padding-top: 34px;
+    }
 }
 
 @media (max-width: 767px) {
+    .course-tabs-button .nav-item {
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+    .section-heading {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .news-card-wrapper {
+        margin-bottom: 30px;
+    }
+    .footer-menu {
+        position: relative;
+        padding-top: 20px;
+    }
+    #app-download-area {
+        padding: 100px 0;
+        background-position: right center;
+    }
+    .news-all-button {
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+    .mentorship-card {
+        margin-bottom: 30px;
+    }
+    #testimonial-area .owl-carousel .owl-item img {
+        width: 100%;
+    }
+    #instructors-area .owl-carousel .owl-nav {
+         position: inherit;
+        top:0px;
+    }
+    .heading-short {
+        width: 100%;
+    }
+    .navbar-area::before {
+        width: 50%;
+    }
+    .topbar-left ul {
+        display: flex;
+        justify-content: center;
+    }
+    .topbar-right ul {
+        justify-content: center;
+        padding-top: 10px;
+    }
     .copyright-text {
         text-align: center;
     }
@@ -104,7 +196,26 @@
         text-align: center;
         padding-top: 15px;
     }
-
+    .community-before::before {
+       display: none;
+    }
+    .community-icon {
+        width: 26%;
+        display: block;
+    }
+    .banner-left-color img {
+      display: none;
+    }
+    .banner-search-form {
+        width: 90%;
+        padding-top: 30px;
+    }
+    .banner-slider-text p {
+        width: 90%;
+    }
+    .about-right-content {
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -112,7 +223,9 @@
 }
 
 @media (max-width: 480px) {
-
+    .topbar-left ul li:last-child {
+        display: none;
+    }
 }
 
 @media (max-width: 361px) {}

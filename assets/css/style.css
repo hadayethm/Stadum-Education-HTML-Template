@@ -379,7 +379,7 @@ textarea.form-control {
     background-image: url('../images/hero-image.png');
     padding: 180px 0px;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center;
     background-size: cover;
 }
 
@@ -1122,11 +1122,6 @@ position: relative;
 }
 .community-top{
     padding-top: 45px;
-}
-.community-img{
-    position: absolute;
-    right: 0;
-    top: 0;
 }
 .community-before{
     position: relative;

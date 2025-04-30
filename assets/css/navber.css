@@ -214,8 +214,19 @@
     .navbar-area {
         background-color: #fff;
         padding-top: 15px;
-        padding-bottom: 15px
+        padding-bottom: 15px;
+        position: relative;
     }
+    .navbar-area::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 463px;
+        height: 101%;
+        background-color: var(--main-color);
+    }
+    
 
     .main-navbar {
         display: none
