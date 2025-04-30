@@ -1,0 +1,118 @@
+@media (min-width: 1400px) {
+
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1608px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .main-navbar::before {
+        content: "";
+        width: 370px;
+    }
+    h1 {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 75px;
+        letter-spacing: 1px;
+    }
+    .banner-bottom-right::before {
+        left: 178px;
+        top: 58px;
+        width: 10%;
+    }
+    .banner-social-icon ul li {
+        margin-right: 6px;   
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #app-download-area {
+        padding: 120px 0;
+    }
+
+}
+
+@media (max-width:1460px) {
+    .banner-bottom-right::before {
+       display: none;
+    }
+    .why-choose-img {
+        position: relative;
+    }
+    .why-choose-img img{
+        width: 100%;
+    }
+    #testimonial-area .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+    #testimonial-area .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+    .community-img {
+        position: re;
+    }
+    .community-img img{
+        width: 100%;
+    }
+    .community-icon {
+        display: none;
+    }
+    .app-download-button a {
+        padding-right: 4PX;
+    }
+    .mean-menu {
+        padding-left:160px;
+    }
+    .main-navbar .navbar .navbar-nav .nav-item {
+        margin-right: 7px;
+    }
+    .about-right-content {
+        padding: 0px 0;
+    }
+    .about-list li {
+        padding-bottom: 14px;
+        font-size: 16px;
+    }
+    .about-list li img {
+        padding-right: 7px;
+    }
+    .banner-slider-img {
+        padding: 115px 0px;
+    }
+}
+
+@media (max-width: 1199px) {
+ 
+}
+
+@media (max-width: 992px) {
+    .choose-element-one {
+        display: none;
+    }
+    .why-choose-img {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .copyright-text {
+        text-align: center;
+    }
+    .copyright-social {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 361px) {}
