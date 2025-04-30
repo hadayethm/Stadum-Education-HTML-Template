@@ -261,10 +261,24 @@
       display: none;
     }
     .banner-slider-text p {
-        width: 90%;
+        width: 100%;
+        font-size: 16px;
     }
     .about-right-content {
         padding-top: 30px;
+    }
+     h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .section-padding {
+        padding: 85px 0;
+    }
+    .community-before {
+        padding: 80px 0;
+    }
+    #marquee-area {
+        padding: 0px 0 85px 0;
     }
 }
 
