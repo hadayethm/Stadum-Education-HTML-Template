@@ -1,7 +1,7 @@
 @media (min-width: 1400px) {
 
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1608px;
+        max-width: 1623px;
     }
 }
 
@@ -74,6 +74,7 @@
     }
     .banner-slider-img {
         padding: 115px 0px;
+        margin: 0;
     }
     .mean-menu {
         padding-left: 20px;

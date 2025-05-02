@@ -90,7 +90,7 @@ h4 {
 }
 
 h1 {
-    font-size: 72px;
+    font-size: 74px;
     font-weight: 400;
     line-height: 88px;
     letter-spacing: 1px;
@@ -216,7 +216,7 @@ textarea.form-control {
     white-space: nowrap;
     position: relative;
     z-index: 0;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 0;
     text-align: center;
@@ -256,10 +256,10 @@ textarea.form-control {
     padding-left: 6px;
 }
 .btn-md{
-    padding: 16px 20px;
+    padding: 20px 48px;
 }
 .btn-sm {
-    padding: 10px 20px;
+    padding: 12px 22px;
 }
 
 /* ===========================
@@ -268,13 +268,14 @@ textarea.form-control {
 /* --Top Header-- */
 .top-header-area {
     background-color: var(--secondary-color);
-    padding: 16px 0;
+    padding: 21px 0;
+    font-weight: 200;
 }
 .topbar-left ul{
     display: flex;
 }
 .topbar-left ul li{
-    padding-right: 40px;
+    padding-right: 52px;
     position: relative;
 }
 
@@ -288,14 +289,15 @@ textarea.form-control {
 .topbar-left ul li::after{
     content: "";
     position: absolute;
-    height: 16px;
-    right: 20px;
-    top: 3px;
-    border-right: 1px solid #ffffff;
+    height: 13px;
+    right: 25px;
+    top: 5px;
+    border-right: 1px solid var(--border-color);
 }
 
 .topbar-left ul li i{
-    padding-right: 8px;
+    padding-right: 10px;
+    font-size: 16px;
 }
 .topbar-left ul li, 
 .topbar-left ul li a {
@@ -313,13 +315,7 @@ textarea.form-control {
     padding-right: 30px; 
     position: relative;
 }
-.topbar-right ul li:last-child{
-    padding: 0;
-}
-.topbar-right ul li:last-child::after{
-   content: "";
-   display: none;
-}
+
 .topbar-right ul li::after{
     content: "";
     position: absolute;
@@ -339,33 +335,53 @@ textarea.form-control {
 .topbar-right ul li a:hover{
     color: var(--main-color);
 }
-.country-select {
-    margin-left: auto;
-    color: white;
-    padding:0px;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
+.top-bar-rigth-wrapper{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
-
-.country-select img {
-    width: 20px;
-    height: 15px;
-}
-
-.country-select select {
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 14px;
+.language-selector {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .selected-language {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    color: var(--white-color);
-}
-.country-select select option{
-    color: var(--secondary-color);
-}
+  }
+  
+  .selected-language img {
+    width: 24px;
+    height: 16px;
+  }
+  
+  .selected-language svg {
+    margin-left: 5px;
+  }
+  
+  .language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 999;
+  }
+  
+  .language-dropdown li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .language-dropdown li img {
+    width: 24px;
+    height: 16px;
+  }
 /* --Banner Area-- */
 #hero-area-one .container-fluid {
     padding-left: 0;
@@ -377,19 +393,21 @@ textarea.form-control {
 }
 .banner-slider-img{
     background-image: url('../images/hero-image.png');
-    padding: 180px 0px;
+    padding: 178px 0px 185px 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .banner-slider-text {
-    padding-left: 50px;
+    padding-left: 75px;
 }
 .banner-slider-text h1{
     color: var(--white-color);
 }
-
+.banner-slider-img{
+    margin-left: 150px;
+}
 #hero-area-one .active .banner-slider-text h1 {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -420,7 +438,7 @@ textarea.form-control {
 }
 .banner-slider-text p {
     color: var(--white-color);
-    width: 79%;
+    width: 76%;
     padding-top: 15px;
     opacity: 0;
     -webkit-transition: all 1400ms ease;
@@ -429,6 +447,7 @@ textarea.form-control {
     -webkit-transform: translateY(80px);
     -ms-transform: translateY(80px);
     transform: translateY(80px);
+    font-weight: 200;
 }
 #hero-area-one .active .banner-search-form{
     opacity: 1;
@@ -440,7 +459,7 @@ textarea.form-control {
     transition-delay: 1500ms;
 }
 .banner-search-form {
-    width: 62%;
+    width: 70%;
     padding-top: 40px;
     opacity: 0;
     -webkit-transition: all 1400ms ease;
@@ -490,10 +509,10 @@ textarea.form-control {
 .banner-bottom-right::before{
     content: "";
     position: absolute;
-    left: 123px;
-    top: 58px;
+    left: 86px;
+    top: 54px;
     border-bottom: 1px solid var(--border-color);
-    width: 255px;
+    width: 330px;
 }
 .banner-bottom-right-item{
     display: flex;
@@ -609,8 +628,8 @@ textarea.form-control {
     padding-top: 170px;
 }
 #hero-area-one .owl-theme .owl-dots .owl-dot span {
-    width: 13px;
-    height: 13px;
+    width: 16px;
+    height: 16px;
     background: transparent;
     border: 1px solid var(--white-color);
 }
@@ -622,26 +641,30 @@ textarea.form-control {
     margin-top: 10px;
     position: absolute;
     transform: rotate(90deg);
-    left: -100px;
-    top: 40%;
+    left: -140px;
+    top: 45%;
 }
 #hero-area-one .owl-theme .owl-dots::after{
     content: "";
     position: absolute;
     width: 130px;
-    left: 90px;
-    top: 10px;
+    right:70%;
+    top: 13px;
     height: 1px;
-    background-color: var(--white-color);
+    background-color: var(--border-color);
+    opacity: .5;
+        transform: translateX(-55%);
 }
 #hero-area-one .owl-theme .owl-dots::before{
     content: "";
     position: absolute;
     width: 130px;
-    right: 90px;
-    top: 10px;
+    left: 70%;
+    top: 13px;
     height: 1px;
-    background-color: var(--white-color);
+    background-color: var(--border-color);
+    opacity: .5;
+    transform: translateX(55%);
 }
 
 /* --About Arae-- */
@@ -671,18 +694,16 @@ position: absolute;
 .section-heading-left h2 span{
     color: var(--main-color);
 }
-.section-heading h2{
-    padding-top: 5px;
-}
 .section-heading h2 span{
     color: var(--main-color);
 }
 .about-right-text p{
     padding-bottom: 37px;
+    font-weight: 500;
 }
 .about-list li{
     padding-bottom: 25px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--paragraph-color);
 }
@@ -866,6 +887,8 @@ position: absolute;
     border-radius: 0;
     color: var(--black-one-color);
     font-size: 16px;
+    padding: 13px 20px;
+    font-weight: 500;
 }
 .course-tabs-button .nav-tabs .nav-link:hover, .course-tabs-button .nav-tabs .nav-link.active {
     border: 1px solid var(--main-color);

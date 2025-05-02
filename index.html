@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="assets/css/style.css">
         <!-- Responsive Css -->
         <link rel="stylesheet" href="assets/css/responsive.css">
+
    </head>
    <body>
       <header class="header-area">
@@ -35,27 +36,34 @@
                      </div>
                   </div>
                   <div class="col-md-6">
+                     <div class="top-bar-rigth-wrapper">
                      <div class="topbar-right">
                         <ul>
                            <li><i class="fas fa-user"></i> <a href="#!">Login / Register</a></li>
                            <li><i class="fas fa-comments"></i><a href="#!">FAQ</a></li>
-                           <li>
-                              <div class="country-select">
-                                 <img id="selected-flag" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="img">
-                                 <select id="countrySelect">
-                                    <option value="USA" data-flag="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg">USA</option>
-                                    <option value="Bangladesh" data-flag="https://upload.wikimedia.org/wikipedia/commons/3/37/Flag_of_Bangladesh.svg">BAN</option>
-                                    <option value="India" data-flag="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg">IND</option>
-                                    <option value="UK" data-flag="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_Kingdom.svg">UK</option>
-                                 </select>
-                              </div>
-                           </li>
                         </ul>
+                     </div>
+                     <div class="language-selector">
+                        <div class="selected-language">
+                          <img src="assets/images/common/usa-flag.png" class="flqq" alt="US Flag">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="15px" viewBox="0 0 1024 1024" class="icon" version="1.1">
+                           <path d="M903.232 256l56.768 50.432L512 768 64 306.432 120.768 256 512 659.072z" fill="#fff"/>
+                        </svg>
+                          
+                        </div>
+                        <ul class="language-dropdown" style="display: none;">
+                          <li data-flag="us"><img src="https://flagcdn.com/us.svg" alt="US"></li>
+                          <li data-flag="gb"><img src="https://flagcdn.com/gb.svg" alt="UK"></li>
+                          <li data-flag="fr"><img src="https://flagcdn.com/fr.svg" alt="France"></li>
+                          <li data-flag="de"><img src="https://flagcdn.com/de.svg" alt="Germany"></li>
+                        </ul>
+                      </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
+
          <!-- Navebar -->
          <div class="navbar-area">
             <div class="main-responsive-nav">
@@ -142,7 +150,7 @@
       <section id="hero-area-one">
          <div class="container-fluid">
             <div class="row g-0">
-               <div class="col-lg-11 offset-lg-1 col-md-12">
+               <div class="col-lg-12 col-md-12">
                   <div class="banner-slider-img">
                      <div class="row g-0">
                         <div class="col-lg-7 col-md-12">
@@ -179,6 +187,21 @@
                               </div>
                               <!-- Slider Item -->
                               <div class="banner-slider-text">
+                                 <h1>Unlock Your Potential With Stadum 2500+ Courses</h1>
+                                 <p>We want every student and study partner to feel that they are part of
+                                    a common good and cohesive team. We help our teams form stronger relationships.
+                                 </p>
+                                 <div class="banner-search-form">
+                                    <form action="#!">
+                                       <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="What do you want to learn?" required="">
+                                          <button class="btn-theme btn-sm" type="submit"><i class="fas fa-search"></i></button>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                                <!-- Slider Item -->
+                                <div class="banner-slider-text">
                                  <h1>Unlock Your Potential With Stadum 2500+ Courses</h1>
                                  <p>We want every student and study partner to feel that they are part of
                                     a common good and cohesive team. We help our teams form stronger relationships.
@@ -292,7 +315,7 @@
                            </div>
                            <div class="col-md-6">
                               <ul class="about-list">
-                                 <li><img src="assets/images/icon/checked.png" alt="icon">Engaging</li>
+                                 <li><img src="assets/images/icon/checked.png" alt="icon">Engaging adn dynamic presention</li>
                                  <li><img src="assets/images/icon/checked.png" alt="icon">Proven track record of success</li>
                                  <li><img src="assets/images/icon/checked.png" alt="icon">24/7 Enhance customer care</li>
                               </ul>
@@ -431,8 +454,8 @@
                <div class="col-lg-4 col-md-12">
                   <div class="section-heading">
                      <h5 class="section-heading-effect">POPULAR CAUSES</h5>
-                     <h2>Pick a course & get start 
-                        excellent journey
+                     <h2>Pick A Course & Get Start 
+                        Excellent Journey
                      </h2>
                   </div>
                </div>
@@ -1276,7 +1299,7 @@
                   <div class="why-choose-item">
                      <div class="section-heading">
                         <h5 class="section-heading-effect">WHY CHOOSE US</h5>
-                        <h2 class="heading-short">The advantages Of Our Courses</h2>
+                        <h2 class="heading-short">The Advantages Of Our Courses</h2>
                      </div>
                      <div class="why-choose-text">
                         <p>
@@ -1953,7 +1976,6 @@
             </div>
          </div>
       </footer>
-
        
       <script src="assets/js/jquery.min.js"></script>
       <!-- Bootstrap js -->
@@ -1966,5 +1988,25 @@
       <script src="assets/js/jquery.magnific-popup.min.js"></script>
       <!-- Main js -->
       <script src="assets/js/main.js"></script>
+      <script>
+         $(document).ready(function(){
+  $('.selected-language').on('click', function() {
+    $('.language-dropdown').toggle();
+  });
+
+  $('.language-dropdown li').on('click', function() {
+    var newFlag = $(this).find('img').attr('src');
+    $('.selected-language img').attr('src', newFlag);
+    $('.language-dropdown').hide();
+  });
+
+  // Optional: clicking outside closes dropdown
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('.language-selector').length) {
+      $('.language-dropdown').hide();
+    }
+  });
+});
+      </script>
    </body>
 </html>
