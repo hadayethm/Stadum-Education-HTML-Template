@@ -191,6 +191,12 @@
 }
 
 @media (max-width: 767px) {
+    .top-bar-rigth-wrapper {
+        justify-content: center;
+    }
+    .language-selector {
+        top: 5px;
+    }
     .course-tabs-button .nav-item {
         padding-right: 10px;
         margin-bottom: 15px;
@@ -294,6 +300,10 @@
         padding-top: 20px;
         border: none;
     }
+    .main-responsive-nav .logo {
+        width: 43%;
+    }
+
     
 }
 
